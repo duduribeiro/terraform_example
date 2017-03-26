@@ -7,13 +7,23 @@ variable "web_instance_count" {
 }
 
 variable "key_name" {
-  default = "The aws keypair to use"
+  description = "The aws keypair to use"
 }
 
 variable "region" {
-  default = "Region that the instances will be created"
+  description = "Region that the instances will be created"
 }
 
+# Networking
+
 variable "vpc_cidr" {
-  default = "The CIDR block of the VPC"
+  description = "The CIDR block of the VPC"
+}
+
+variable "public_subnet_cidr" {
+  description = "The CIDR block of the public subnet"
+}
+
+variable "private_subnet_cidr" {
+  description = "The CIDR block of the private subnet"
 }
