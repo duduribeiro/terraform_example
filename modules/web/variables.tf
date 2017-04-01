@@ -3,7 +3,7 @@ variable "web_instance_count" {
 }
 
 variable "region" {
-  default = "The region to lunch the instances"
+  description = "The region to launch the instances"
 }
 
 variable "amis" {
@@ -15,15 +15,15 @@ variable "amis" {
 }
 
 variable "instance_type" {
-  description = "The instance type to lunch"
+  description = "The instance type to launch"
 }
 
 variable "private_subnet_id" {
-  description = "The id of the private subnet to lunch the instances"
+  description = "The id of the private subnet to launch the instances"
 }
 
 variable "public_subnet_id" {
-  description = "The id of the public subnet to lunch the load balancer"
+  description = "The id of the public subnet to launch the load balancer"
 }
 
 variable "vpc_sg_id" {
@@ -31,15 +31,15 @@ variable "vpc_sg_id" {
 }
 
 variable "vpc_cidr_block" {
-  default = "The CIDR block from the VPC"
+  description = "The CIDR block from the VPC"
 }
 
 variable "key_name" {
-  default = "The keypair to use on the instances"
+  description = "The keypair to use on the instances"
 }
 
 variable "environment" {
-  default = "The environment for the instance"
+  description = "The environment for the instance"
 }
 
 variable "vpc_id" {

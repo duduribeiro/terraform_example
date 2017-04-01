@@ -10,5 +10,4 @@ module "web" {
   environment         = "${var.environment}"
   vpc_id              = "${module.networking.vpc_id}"
   vpc_cidr_block      = "${var.vpc_cidr}"
-  depends_on          = ["aws_key_pair.key"]
 }
